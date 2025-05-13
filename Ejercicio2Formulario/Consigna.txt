@@ -1,0 +1,23 @@
+
+Se necesita un formulario para rendir materias adeudadas que cumpla con las siguientes condiciones
+1- Debe pedir nombre, mail y materia adeudada
+2- Tiene que tener un boton de enviar que antes de guardar los datos haga las siguientes verificaciones:
+    2.1- El nombre es un nombre real
+    2.2- El mail es valido
+    2.3- La materia es valida
+3- Si todos los datos son correctos entonces se cerrara el formulario y se mostran los datos escritos con dos botones "datos correctos" "datos incorrectos"
+    3.1- Si los datos son correctos entonces debajo del cuadro aparece el mensaje de "Gracias por su inscripcion" y se guardan los datos en una lista
+    3.2- Si los datos son incorrectos se cierra el cuadro y se vuelve a abrir el formulario
+
+Notas a tener en cuenta:
+1- Hay que crear una lista de 10 materias que son las materias posibles
+2- Para verificar que el nombre es valido solo tendra que tener letras, espacios y tildes
+3- Se debera mostrar un mensaje indicando que parte es incorrecta en caso de llenar mal el formulario
+5- Todo tiene que tener una linda estetica y el codigo tiene que ser lo mas simple posible
+
+Expansion:
+Si los datos son correctos entonces se crearan debajo del formulario un recuadro que mostrara la materia inscripta
+Si se agregan multiples materias se agregaran filas mostrando el nombre de las nuevas materias
+Debajo del recuadro habra un boton verde que dira "Confirmar carrito" y otro que dira "Cancelar carrito" 
+Si se confirma el carrito se abrira una nueva pestaña que mostrara "Carrito confirmado y una lista de las materias inscriptas"
+Si se cancela el carrito se volvera al estado incial

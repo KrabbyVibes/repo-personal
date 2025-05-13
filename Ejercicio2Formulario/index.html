@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscripción de Materias</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Creo un contenedor para mover todo mas facil -->
+  <div class="container">
+    <h1>Formulario de Materias Adeudadas</h1>
+    <!-- Creo el formulario -->
+    <form id="formDeudas" novalidate>
+      <!-- Defino casilla nombre y su error -->
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+      <small class="error" id="error-nombre"></small>
+      <!-- Defino casilla email y su error -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <small class="error" id="error-email"></small>
+
+      <!-- Defino casilla materia, sus opciones y su error -->
+      <label for="materia">Materia:</label>
+      <select id="materia" name="materia" required>
+        <option value="">-- Seleccioná una materia --</option>
+        <option>Matemática I</option>
+        <option>Física I</option>
+        <option>Química</option>
+        <option>Programación</option>
+        <option>Ingeniería de Software</option>
+        <option>Electrónica</option>
+        <option>Redes</option>
+        <option>Sistemas Operativos</option>
+        <option>Bases de Datos</option>
+        <option>Metodología de la Investigación</option>
+      </select>
+      <small class="error" id="error-materia"></small>
+      <!-- Boton de enviar -->
+      <button type="submit">Enviar</button>
+    </form>
+      
+  </div>
+
+  <!-- Contenedor de registros, oculto si esta vacio -->
+  <div id="listaRegistros" class="hidden">
+    <h2>Registros Inscritos</h2>
+    <!-- Aca van los registros en filas -->
+    <!-- Botones del registro -->
+    <div id="botonesCarrito" class="botones-carrito">
+      <button id="confirmarCarrito">Confirmar carrito</button>
+      <button id="cancelarCarrito">Cancelar carrito</button>
+    </div>
+  </div>
+
+
+  <script src="script.js" defer></script>
+</body>
+</html>

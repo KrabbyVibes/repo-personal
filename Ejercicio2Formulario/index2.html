@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito confirmado</title>
+  <!-- Agrego el estiloa aca para no poner un nuevo css -->
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; }
+    h1   { color: #28a745; text-align: center; }
+    ul   { list-style: none; padding: 0; }
+    li   { margin: 0.5rem 0; }
+    .hidden { display: none; }
+  </style>
+
+</head>
+<body>
+  <h1>Carrito confirmado</h1>
+  <ul id="lista"></ul>
+  <!-- No deberia poder pasar pero por las dudas-->
+  <p id="no-hay" class="hidden">No hay registros.</p>
+  <!-- Agrego tambien aca el script -->
+  <script>
+    //Cargo los registros desde localStorage
+    const regs = JSON.parse(localStorage.getItem('registros') || '[]');
+    //Paso los registros de un string a un objeto con estructura
+    const ul   = document.getElementById('lista');
+    if (regs.length) {
+      regs.forEach(r => {
+        const li = document.createElement('li');
+        li.textContent = `${r.nombre} — ${r.email} — ${r.materia}`;
+        ul.appendChild(li);
+      });
+    } 
+    else {
+      document.getElementById('no-hay').classList.remove('hidden');
+    }
+    // Limpio el storage para no llenar de datos
+    localStorage.removeItem('registros');
+  </script>
+</body>
+</html>
