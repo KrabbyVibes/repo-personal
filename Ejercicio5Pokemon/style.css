@@ -1,0 +1,73 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.pokedex {
+    width: 350px;
+    background: #d62828;
+    border: 8px solid #000;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.search {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.search input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+}
+
+.search button {
+    padding: 8px 12px;
+    border: none;
+    background: #fcbf1e;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    transition: background 0.3s;
+}
+
+.search button:hover {
+    background: #ffba08;
+}
+
+.pokemon-container {
+    background: #000;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+.pokemon-container img {
+    width: 120px;
+    height: 120px;
+}
+
+.pokemon-container h2 {
+    margin: 10px 0 5px;
+    text-transform: capitalize;
+}
+
+.pokemon-container .type {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin: 2px;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+}

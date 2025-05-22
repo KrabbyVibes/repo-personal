@@ -1,0 +1,2 @@
+Objetivo: Crear una aplicación que al ingresar el nombre de una ciudad muestre el clima actual utilizando la API de OpenWeatherMap.
+

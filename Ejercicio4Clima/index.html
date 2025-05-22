@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Clima App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="app">
+        <h1>Consulta el clima</h1>
+        <!-- Clima por ubicación actual -->
+        <div id="localWeather" class="result"></div>
+         <!-- Clima por ciudad escrita -->
+        <form id="weatherForm">
+            <input type="text" id="cityInput" placeholder="Ingresa una ciudad" required />
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <!-- libreria Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Simular la carga de archivos a un servidor usando axios (mockeado) y async/await, sin conectarte a internet ni usar ninguna API real.
+
+Objetivo:
+Ingresás el nombre o número de un Pokémon, y te muestra: Su nombre, su imagen oficial y sus tipos (como fuego, agua, etc.).
